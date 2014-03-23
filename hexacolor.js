@@ -1,0 +1,1 @@
+start_button.onclick=start_game()

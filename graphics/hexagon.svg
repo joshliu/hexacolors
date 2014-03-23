@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
+	<polygon fill="#0074D9" stroke="black" stroke-width="1" id="blue" 
+            points="
+            150,75 
+            150,200 
+            258,137.5" />
+  <polygon fill="#B10DC9" stroke="black" stroke-width="1" id="violet"
+            points="
+            150,200
+            258,137.5 
+            258,262.5" />
+  <polygon fill="#FF4136" stroke="black" stroke-width="1" id="red"
+            points="
+            150,200
+            258,262.5
+            150,325" /> 
+  <polygon fill="#FFDC00" stroke="black" stroke-width="1" id="yellow"
+            points="
+            42,262.6
+            150,200
+            42,137.5" />
+  <polygon fill="#2ECC40" stroke="black" stroke-width="1" id="green"
+            points="
+            42,137.5
+            150,200
+            150,75" />
+  <polygon fill="#FF851B" stroke="black" stroke-width="1" id="orange"
+            points="
+            42,262.6
+            150,200
+            150,325" />
+</svg>
