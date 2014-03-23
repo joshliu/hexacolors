@@ -35,7 +35,9 @@
         <h1>Hexacolor</h1>
         <p class="lead">Click the colors of the Hexagon in the order that is given.</p>
         <p class="btn btn-lg btn-default" id="start">Play Gaem</p>
-        <img src="graphics/hexagon.svg" id="hexagon" >
+        <span id="timer"></span>
+        <span id="colors"></span>
+        <span id="hexagon"><img src="graphics/hexagon.svg"></span>
       </div>
 
 

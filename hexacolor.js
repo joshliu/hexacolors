@@ -2,8 +2,8 @@ $(document).ready(function() {
     $('#start').click(function() {
         $('#start').fadeOut('slow');
         $('#hexagon').fadeIn()
-        // $('#colors')
-        // startTimer();
+        $('#colors').fadeIn()
+        startTimer();
     });
 });
 
@@ -18,12 +18,20 @@ var generateList = function(){
   return output;
 }
 
-var startTimer = function(){
-  var x = true;
-  while (x === true);{
-    if x.
+var count=0;
+
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+function timer()
+{
+  count+=1;
+  if (count == 600)
+  {
+     clearInterval(counter);
+     return ("You Lose!");
   }
 }
+
 
 var reset = function(){
 
