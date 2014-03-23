@@ -7,3 +7,22 @@ body {
   padding: 30px 15px;
   text-align: center;
 }
+
+#hexagon {
+	display: none;
+}
+
+#colors {
+	display: none;
+}
+
+#timer {
+	display: none;
+}
+
+#footer {
+	display: none;
+	color: white;
+	text-align: middle;
+	vertical-align: middle;
+}
