@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $('#start').click(function() {
         $('#start').fadeOut('slow');
-        $('#hexagon').fadeIn()
-        $('#colors').fadeIn()
-        startTimer();
+        $('#hexagon').fadeIn();
+        $('#colors').fadeIn();
+        $('#timer').fadeIn();
     });
 });
 
@@ -31,7 +31,6 @@ function timer()
      return ("You Lose!");
   }
 }
-
 
 var reset = function(){
 
