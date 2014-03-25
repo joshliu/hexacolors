@@ -1,2 +1,2 @@
 ###Hexacolor: a simple color game
-#Click [here]("http://www.hexacolors.com/" "Hexacolor")
+Click [here]("http://www.hexacolors.com/" "Hexacolor") to play.
