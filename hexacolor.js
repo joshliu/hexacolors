@@ -1,3 +1,14 @@
+var array = ["blue", "purple", "green", "red", "yellow", "orange"];
+
+var generateList = function(){
+  var array = ["blue", "purple", "green", "red", "yellow", "orange"];
+  var output = [];
+  while (array.length) {
+    output.push(array.splice(Math.floor(Math.random() * array.length), 1)[0]);
+  }
+  return output;
+};
+
 $(document).ready(function() {
     $('#start').click(function() {
         $('#start').fadeOut('slow');
@@ -16,25 +27,8 @@ $('polygon').click(function() {
   $(this).css("fill", "#DDDDDD");
 });
 
-
-// $('#blue').click(function() {
-//   $('#blue').fadeOut();
-// });
-// $('#blue').click(function() {
-//   $('#blue').fadeOut();
-// });
-// $('#blue').click(function() {
-//   $('#blue').fadeOut();
-// });
-// $('#blue').click(function() {
-//   $('#blue').fadeOut();
-// });
-// $('#blue').click(function() {
-//   $('#blue').fadeOut();
-// });
-// $('#blue').click(function() {
-//   $('#blue').fadeOut();
-// });
+$('#').click(function() {
+  $('#').
 
 
 function timer()
@@ -52,16 +46,3 @@ var counter=setInterval(timer, 10); //1000 will  run it every 1 second
      document.write("You Lose!");
   }
 }
-
-var array = ["blue", "purple", "green", "red", "yellow", "orange"];
-
-// Below is not working.
-
-// var generateList = function(){
-//   var array = ["blue", "purple", "green", "red", "yellow", "orange"];
-//   var output = [];
-//   while (array.length) {
-//     output.push(array.splice(Math.floor(Math.random() * array.length), 1)[0]);
-//   }
-//   return output;
-// };
