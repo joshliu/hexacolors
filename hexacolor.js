@@ -8,9 +8,34 @@ $(document).ready(function() {
         $('#colors').fadeIn().slideUp;
         $('#timer').fadeIn().slideUp;
         $('#footer').fadeIn(5000);
-    }, 1000);
+    }, 600);
     });
 });
+
+$('polygon').click(function() {
+  $(this).css("fill", "#DDDDDD");
+});
+
+
+// $('#blue').click(function() {
+//   $('#blue').fadeOut();
+// });
+// $('#blue').click(function() {
+//   $('#blue').fadeOut();
+// });
+// $('#blue').click(function() {
+//   $('#blue').fadeOut();
+// });
+// $('#blue').click(function() {
+//   $('#blue').fadeOut();
+// });
+// $('#blue').click(function() {
+//   $('#blue').fadeOut();
+// });
+// $('#blue').click(function() {
+//   $('#blue').fadeOut();
+// });
+
 
 function timer()
 {
