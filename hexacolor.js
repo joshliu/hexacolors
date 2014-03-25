@@ -3,10 +3,12 @@ $(document).ready(function() {
         $('#start').fadeOut('slow');
         $('#title').fadeOut('slow');
         $('#description').fadeOut('slow');
+    setTimeout(function() {
         $('#hexagon').fadeIn('slow').slideUp;
         $('#colors').fadeIn().slideUp;
         $('#timer').fadeIn().slideUp;
         $('#footer').fadeIn(5000);
+    }, 1000);
     });
 });
 

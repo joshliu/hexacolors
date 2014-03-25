@@ -23,6 +23,10 @@ body {
 #footer {
 	display: none;
 	color: white;
-	text-align: middle;
-	vertical-align: middle;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.game {
+	text-align: center;
 }
