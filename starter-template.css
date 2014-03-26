@@ -10,6 +10,7 @@ body {
 
 #hexagon {
 	display: none;
+	margin-bottom: 30px;
 }
 
 #colors {
@@ -27,6 +28,18 @@ body {
 	margin-top: 50px;
 }
 
+#endgame {
+	display: none;
+}
+
 .game {
 	text-align: center;
+}
+
+#blue #green #red #yellow #purple #orange {
+	display: none;
+}
+
+#hidethis {
+	display: none;
 }

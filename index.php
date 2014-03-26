@@ -31,19 +31,19 @@
 
       <div class="starter-template">
         <h1 id="title">Hexacolor</h1>
-        <p class="lead" id="description">Click the colors of the Hexagon in the order that is given.</p>
+        <p class="lead" id="description">Test Your Reaction Time!</p>
         <p class="btn btn-lg btn-default" id="start">Play Game</p>
       </div>
       <div class="game">
         <h1 id="timer">0.00 Seconds</h1>
-        <p class="lead" id="colors">Blue, Purple, Green, Red, Yellow, Orange</p>
+        <p class="lead" id="colors"></p>
         <span id="hexagon"><svg xmlns="http://www.w3.org/2000/svg" width="300" height="325">
   <polygon fill="#0074D9" id="blue" 
             points="
             150,75 
             150,200 
             258,137.5" />
-  <polygon fill="#B10DC9" id="violet"
+  <polygon fill="#B10DC9" id="purple"
             points="
             150,200
             258,137.5 
@@ -70,9 +70,13 @@
             150,325" />
 </svg></span>
 <!-- End of Hexagon -->
+<p class="lead" id="hidethis">Just Pressed: <strong><span id="buttonpressed"></span></strong></p>
       </div>
       <br>
       <center>
+      <div id="endgame">
+        <h1>You Lost! D:</h1>
+      </div>
       <div id="footer">
         Created By Joshua Liu at HackBCA under the MIT License.
       </div>
