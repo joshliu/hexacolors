@@ -8,7 +8,9 @@
     <meta name="author" content="">
 
     <title>Hexacolor</title>
-
+    <link rel="icon" 
+      type="image/png" 
+      href="graphics/hexagon.png">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 

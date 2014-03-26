@@ -27,8 +27,8 @@ $('polygon').click(function() {
   $(this).css("fill", "#DDDDDD");
 });
 
-$('#').click(function() {
-  $('#').
+// $('#').click(function() {
+//   $('#').
 
 
 function timer()
