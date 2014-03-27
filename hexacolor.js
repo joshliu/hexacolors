@@ -30,7 +30,9 @@ $(document).ready(function() {
         $('#colors').append(testing_string);
         $('#start').fadeOut('slow');
         $('#title').fadeOut('slow');
+        $('#hidethis').fadeOut('slow');
         $('#description').fadeOut('slow');
+        $('#footer').fadeOut(500);
     setTimeout(function() {
         // $('#blue').fadeIn(200);
         // $('#purple').fadeIn(300);
@@ -38,11 +40,10 @@ $(document).ready(function() {
         // $('#orange').fadeIn(500);
         // $('#yellow').fadeIn(600);
         // $('#green').fadeIn(700);
+        $('.panel').fadeIn(300);
         $('#hexagon').fadeIn(300);
         $('#colors').fadeIn(300);
         $('#timer').fadeIn(300);
-        $('#hidethis').fadeIn(300);
-        $('#footer').fadeIn(5000);
     }, 600);
     });
 });

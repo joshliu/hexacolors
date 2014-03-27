@@ -13,7 +13,7 @@
       href="graphics/hexagon.png">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
 
@@ -30,55 +30,64 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1 id="title">Hexacolor</h1>
+        <h1 id="title"><strong>Hexacolor</strong></h1>
         <p class="lead" id="description">Test Your Reaction Time!</p>
         <p class="btn btn-lg btn-default" id="start">Play Game</p>
       </div>
       <div class="game">
         <h1 id="timer">0.00 Seconds</h1>
-        <p class="lead" id="colors"></p>
-        <span id="hexagon"><svg xmlns="http://www.w3.org/2000/svg" width="300" height="325">
+        <center><div class="well" id="colors">
+        <strong><p class="lead" id="colors"></p></strong>
+        </div></center>
+        <span id="hexagon"><svg xmlns="http://www.w3.org/1250/svg" width="300" height="250">
   <polygon fill="#0074D9" id="blue" 
             points="
-            150,75 
-            150,200 
-            258,137.5" />
+            150,0 
+            150,125 
+            258,62.5" />
   <polygon fill="#B10DC9" id="purple"
             points="
-            150,200
-            258,137.5 
-            258,262.5" />
+            150,125
+            258,62.5 
+            258,187.5" />
   <polygon fill="#FF4136" id="red"
             points="
-            150,200
-            258,262.5
-            150,325" /> 
+            150,125
+            258,187.5
+            150,250" /> 
   <polygon fill="#FFDC00" id="yellow"
             points="
-            42,262.6
-            150,200
-            42,137.5" />
+            42,187.6
+            150,125
+            42,62.5" />
   <polygon fill="#2ECC40" id="green"
             points="
-            42,137.5
-            150,200
-            150,75" />
+            42,62.5
+            150,125
+            150,0" />
   <polygon fill="#FF851B" id="orange"
             points="
-            42,262.6
-            150,200
-            150,325" />
+            42,187.6
+            150,125
+            150,250" />
 </svg></span>
 <!-- End of Hexagon -->
-<p class="lead" id="hidethis">Just Pressed: <strong><span id="buttonpressed"></span></strong></p>
       </div>
       <br>
       <center>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Just Clicked:</h3>
+        </div>
+        <div class="panel-body">
+          <strong><span id="buttonpressed">Nothin' Yet</span></strong>
+        </div>
+      </div>
       <div id="endgame">
         <h1>You Lost! D:</h1>
       </div>
       <div id="footer">
-        Created By Joshua Liu at HackBCA under the MIT License.
+        Made By Joshua Liu at HackBCA under the MIT License. <a href="https://twitter.com/joshjoshliuliu">@joshjoshliuliu</a>
       </div>
     </center>
 

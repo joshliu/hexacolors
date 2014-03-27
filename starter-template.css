@@ -10,7 +10,7 @@ body {
 
 #hexagon {
 	display: none;
-	margin-bottom: 30px;
+	margin-bottom: 100px;
 }
 
 #colors {
@@ -22,7 +22,6 @@ body {
 }
 
 #footer {
-	display: none;
 	color: white;
 	text-align: center;
 	margin-top: 50px;
@@ -40,6 +39,28 @@ body {
 	display: none;
 }
 
-#hidethis {
+#buttonpressed {
+	color: black;
+}
+
+.panel {
+	width: 200px;
 	display: none;
+}
+
+.panel-primary {
+	width: 200px;
+	display: none;
+}
+
+#title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 50pt;
+}
+
+.well {
+	color: #001F3F;
+	width: 400px;
+	font-size: 15pt;
+	margin: 20px;
 }
