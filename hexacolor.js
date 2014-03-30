@@ -32,6 +32,32 @@ function endGame() {
   setTimeout(function(){
     $('#hexagon').fadeIn(300);
     $('#score').html(current_time)
+    var your_rank = ""
+    if (current_time < 300){
+        your_rank = "Light!";
+      }else
+      if (current_time < 350){
+        your_rank = "Sound!";
+      }else
+      if (current_time < 400){
+        your_rank = "a Racecar";
+      }else
+      if (current_time < 500){
+        your_rank = "a Cheetah";
+      }else
+      if (current_time < 600){
+        your_rank = "a Horsey";
+      }else
+      if (current_time < 800){
+        your_rank = "a Human";
+      }else
+      if (current_time < 1000){
+        your_rank = "a Sloth";
+      }else
+      {    
+        your_rank = "a Turtle";
+      }
+    $('#rank').html(your_rank)
     $('#endgame').fadeIn(300);
   }, 400);
 }
@@ -70,7 +96,7 @@ var current_time = 0;
 
 $(document).ready(function() {
     $('#start').click(function() {
-        $('#colors').append(testing_string);
+        $('#colors').html(testing_string);
         $('#start').fadeOut(100);
         $('#title').fadeOut('slow');
         $('#hidethis').fadeOut('slow');

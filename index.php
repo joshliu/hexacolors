@@ -84,7 +84,7 @@
         </div>
       </div>
       <div id="endgame">
-        <h1>Score: <span id="score"></span></h1>
+        <h1>Score: <span id="score"></span><br>Level: Speed of <span id="rank"></span></h1>
         <br>
         <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>
       </div>
