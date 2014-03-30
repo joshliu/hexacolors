@@ -89,7 +89,7 @@
         <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>
       </div>
       <div id="footer">
-        Made By Joshua Liu at HackBCA under the MIT License. <a href="https://twitter.com/joshjoshliuliu">@joshjoshliuliu</a>
+        Made By Joshua Liu at HackBCA. <a href="https://twitter.com/joshjoshliuliu">@joshjoshliuliu</a>
       </div>
     </center>
 

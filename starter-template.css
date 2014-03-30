@@ -15,7 +15,7 @@ body {
 
 #hexagon {
 	display: none;
-	margin: 40px;
+	margin: 30px;
 }
 
 #colors {
@@ -46,6 +46,36 @@ body {
 	display: none;
 }
 
+#blue:active {
+	stroke:white;
+	stroke-width:2px;
+}
+
+#green:active {
+	stroke:white;
+	stroke-width:2px;
+}
+
+#red:active {
+	stroke:white;
+	stroke-width:2px;
+}
+
+#orange:active {
+	stroke:white;
+	stroke-width:2px;
+}
+
+#yellow:active {
+	stroke:white;
+	stroke-width:2px;
+}
+
+#purple:active {
+	stroke:white;
+	stroke-width:2px;
+}
+
 #buttonpressed {
 	color: black;
 }
@@ -69,5 +99,5 @@ body {
 	color: #001F3F;
 	width: 400px;
 	font-size: 15pt;
-	margin: 20px;
+	margin: 10px;
 }
