@@ -1,4 +1,6 @@
-var array_of_colors = [" blue", " purple", " green", " red", " yellow", " orange"];
+//define objects
+
+var array_of_colors = ["Blue", "Purple", "Green", "Red", "Yellow", "Orange"];
 
 function shuffle(array) {
   var currentIndex = array.length
@@ -22,8 +24,36 @@ function shuffle(array) {
   return array;
 }
 
+function startTimer() {
+  var timer = setInterval(function(){
+    current_time += 1;
+    $('#timer').html(current_time);
+    if (current_time === 3600) {clearInterval(timer);
+      $('#timer').html("You Lose!");
+    };
+    if (testing_array.length == 0) {clearInterval(timer);};
+  }, 10);
+}
+
+function checkButton(color) {
+  buttonpressed = color;
+  $('#buttonpressed').html(buttonpressed);
+  if (buttonpressed === testing_array[0]) {
+    testing_array.shift();
+    $('polygon').click(function() {
+      $(this).css("fill", "#DDDDDD");
+    });
+  }
+  else {
+    current_time += 100;
+  }
+}
+
 var testing_array = shuffle(array_of_colors);
 var testing_string = testing_array.toString();
+var current_time = 0;
+
+//on click: do this
 
 $(document).ready(function() {
     $('#start').click(function() {
@@ -33,6 +63,7 @@ $(document).ready(function() {
         $('#hidethis').fadeOut('slow');
         $('#description').fadeOut('slow');
         $('#footer').fadeOut(500);
+        startTimer();
     setTimeout(function() {
         // $('#blue').fadeIn(200);
         // $('#purple').fadeIn(300);
@@ -48,35 +79,27 @@ $(document).ready(function() {
     });
 });
 
-$('polygon').click(function() {
-  $(this).css("fill", "#DDDDDD");
-});
+//Sense what button is pressed
 
 var buttonpressed = "";
 
 $('#blue').click(function() {
-  buttonpressed = "Blue";
-  $('#buttonpressed').html(buttonpressed);
+  checkButton("Blue");
 });
 $('#red').click(function() {
-  buttonpressed = "Red";
-  $('#buttonpressed').html(buttonpressed);
+  checkButton("Red");
 });
 $('#green').click(function() {
-  buttonpressed = "Green";
-  $('#buttonpressed').html(buttonpressed);
+  checkButton("Green");
 });
 $('#purple').click(function() {
-  buttonpressed = "Purple";
-  $('#buttonpressed').html(buttonpressed);
+  checkButton("Purple");
 });
 $('#yellow').click(function() {
-  buttonpressed = "Yellow";
-  $('#buttonpressed').html(buttonpressed);
+  checkButton("Yellow");
 });
 $('#orange').click(function() {
-  buttonpressed = "Orange";
-  $('#buttonpressed').html(buttonpressed);
+  checkButton("Orange");
 });
 
 // var endGame = function(){
