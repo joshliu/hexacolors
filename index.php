@@ -39,7 +39,7 @@
         <center><div class="well" id="colors">
         <strong><p class="lead" id="colors"></p></strong>
         </div></center>
-        <span id="hexagon"><svg xmlns="http://www.w3.org/1250/svg" width="300" height="250">
+        <div id="hexagon"><svg xmlns="http://www.w3.org/1250/svg" width="300" height="250">
   <polygon fill="#0074D9" id="blue" 
             points="
             150,0 
@@ -70,7 +70,7 @@
             42,187.6
             150,125
             150,250" />
-</svg></span>
+</svg></div>
 <!-- End of Hexagon -->
       </div>
       <br>
@@ -84,7 +84,9 @@
         </div>
       </div>
       <div id="endgame">
-        <h1>You Lost! D:</h1>
+        <h1>Score: <span id="score"></span></h1>
+        <br>
+        <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>
       </div>
       <div id="footer">
         Made By Joshua Liu at HackBCA under the MIT License. <a href="https://twitter.com/joshjoshliuliu">@joshjoshliuliu</a>

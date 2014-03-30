@@ -3,6 +3,11 @@ body {
   background: #001F3F;
   color: white;
 }
+
+#container {
+	position: relative;
+}
+
 .starter-template {
   padding: 30px 15px;
   text-align: center;
@@ -10,7 +15,7 @@ body {
 
 #hexagon {
 	display: none;
-	margin-bottom: 100px;
+	margin: 40px;
 }
 
 #colors {
@@ -23,8 +28,10 @@ body {
 
 #footer {
 	color: white;
-	text-align: center;
 	margin-top: 50px;
+	position: absolute;
+	bottom: 2%;
+	left: 1.5%;
 }
 
 #endgame {

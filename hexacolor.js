@@ -24,14 +24,29 @@ function shuffle(array) {
   return array;
 }
 
+function endGame() {
+  $('.panel').fadeOut(300);
+  $('#hexagon').fadeOut(300);
+  $('#colors').fadeOut(300);
+  $('#timer').fadeOut(300);
+  setTimeout(function(){
+    $('#hexagon').fadeIn(300);
+    $('#score').html(current_time)
+    $('#endgame').fadeIn(300);
+  }, 400);
+}
+
+
 function startTimer() {
   var timer = setInterval(function(){
     current_time += 1;
     $('#timer').html(current_time);
-    if (current_time === 3600) {clearInterval(timer);
+    if (current_time >= 3600) {clearInterval(timer);
       $('#timer').html("You Lose!");
-    };
-    if (testing_array.length == 0) {clearInterval(timer);};
+    }
+    if (testing_array.length == 0) {clearInterval(timer);
+      setTimeout(endGame(), 1000);
+    }
   }, 10);
 }
 
@@ -40,9 +55,7 @@ function checkButton(color) {
   $('#buttonpressed').html(buttonpressed);
   if (buttonpressed === testing_array[0]) {
     testing_array.shift();
-    $('polygon').click(function() {
-      $(this).css("fill", "#DDDDDD");
-    });
+    $(this).css("fill", "#DDDDDD");
   }
   else {
     current_time += 100;
@@ -58,7 +71,7 @@ var current_time = 0;
 $(document).ready(function() {
     $('#start').click(function() {
         $('#colors').append(testing_string);
-        $('#start').fadeOut('slow');
+        $('#start').fadeOut(100);
         $('#title').fadeOut('slow');
         $('#hidethis').fadeOut('slow');
         $('#description').fadeOut('slow');
@@ -81,6 +94,10 @@ $(document).ready(function() {
 
 //Sense what button is pressed
 
+// $('polygon').click(function() {
+//   $(this).css("fill", "#DDDDDD");
+// });
+
 var buttonpressed = "";
 
 $('#blue').click(function() {
@@ -101,9 +118,3 @@ $('#yellow').click(function() {
 $('#orange').click(function() {
   checkButton("Orange");
 });
-
-// var endGame = function(){
-//   $(h1).fadeOut();
-//   $(p).fadeOut();
-//   $("#hexagon").fadeOut();
-// };
