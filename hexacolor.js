@@ -37,19 +37,19 @@ function endGame() {
         your_rank = "Light";
       }else
       if (current_time < 350){
-        your_rank = "Sound";
+        your_rank = "Superhuman";
       }else
       if (current_time < 400){
-        your_rank = "Racecar";
+        your_rank = "Rocket";
       }else
       if (current_time < 500){
-        your_rank = "Cheetah";
+        your_rank = "Supersonic";
       }else
       if (current_time < 600){
         your_rank = "Horsey";
       }else
       if (current_time < 800){
-        your_rank = "Human";
+        your_rank = "Average";
       }else
       if (current_time < 1000){
         your_rank = "Sloth";
