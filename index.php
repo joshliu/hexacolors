@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hexacolor</title>
+    <title>Hexacolors</title>
     <link rel="icon" 
       type="image/png" 
       href="graphics/hexagon.png">
@@ -33,7 +33,7 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1 id="title"><strong>Hexacolor</strong></h1>
+        <h1 id="title"><strong>Hexacolors</strong></h1>
         <p class="lead" id="description">Test Your Reaction Time!</p>
         <p class="btn btn-lg btn-default" id="start">Play Game</p>
       </div>
