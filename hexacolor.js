@@ -51,11 +51,11 @@ function endGame() {
       if (current_time < 800){
         your_rank = "Average";
       }else
-      if (current_time < 1000){
+      if (current_time < 2000){
         your_rank = "Sloth";
       }else
-      {    
-        your_rank = "Turtle";
+      {
+        your_rank = "Retard";
       }
     $('#rank').html(your_rank)
     $('#endgame').fadeIn(300);
