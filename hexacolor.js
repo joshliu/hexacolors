@@ -34,7 +34,7 @@ function endGame() {
     $('#score').html(current_time)
     var your_rank = ""
       if (current_time < 300){
-        your_rank = "NIGGA";
+        your_rank = "Light";
       }else
       if (current_time < 350){
         your_rank = "Superhuman";
@@ -43,16 +43,16 @@ function endGame() {
         your_rank = "Rocket";
       }else
       if (current_time < 500){
-        your_rank = "Supersonic";
-      }else
-      if (current_time < 600){
-        your_rank = "Horsey";
-      }else
-      if (current_time < 800){
         your_rank = "Average";
       }else
-      if (current_time < 2000){
+      if (current_time < 600){
+        your_rank = "Snail";
+      }else
+      if (current_time < 800){
         your_rank = "Sloth";
+      }else
+      if (current_time < 2000){
+        your_rank = "Slowpoke";
       }else
       {
         your_rank = "Retard";
