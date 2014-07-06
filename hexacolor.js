@@ -68,7 +68,7 @@ function startTimer() {
     current_time += 1;
     $('#timer').html(current_time);
     if (current_time >= 3600) {clearInterval(timer);
-      $('#timer').html('Are you Helen Keller? <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>');
+      $('#timer').html('Are you <a href="http://instagram.com/isaaclinsane">Isaac Huang</a>? <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>');
     }
     if (testing_array.length == 0) {clearInterval(timer);
       setTimeout(endGame(), 1000);
