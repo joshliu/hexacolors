@@ -34,7 +34,7 @@ function endGame() {
     $('#score').html(current_time)
     var your_rank = ""
       if (current_time < 300){
-        your_rank = "Light";
+        your_rank = "NIGGA";
       }else
       if (current_time < 350){
         your_rank = "Superhuman";
@@ -68,7 +68,7 @@ function startTimer() {
     current_time += 1;
     $('#timer').html(current_time);
     if (current_time >= 3600) {clearInterval(timer);
-      $('#timer').html('You Lose! <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>');
+      $('#timer').html('Are you Helen Keller? <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>');
     }
     if (testing_array.length == 0) {clearInterval(timer);
       setTimeout(endGame(), 1000);
