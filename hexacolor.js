@@ -3,9 +3,9 @@
 var array_of_colors = ["Blue", "Purple", "Green", "Red", "Yellow", "Orange"];
 
 function shuffle(array) {
-  var currentIndex = array.length
-    , temporaryValue
-    , randomIndex
+  var currentIndex = array.length,
+  temporaryValue,
+  randomIndex
     ;
 
   // While there remain elements to shuffle...
@@ -31,8 +31,8 @@ function endGame() {
   $('#timer').fadeOut(300);
   setTimeout(function(){
     $('#hexagon').fadeIn(300);
-    $('#score').html(current_time)
-    var your_rank = ""
+    $('#score').html(current_time);
+    var your_rank = "";
       if (current_time < 300){
         your_rank = "Light";
       }else
@@ -57,7 +57,7 @@ function endGame() {
       {
         your_rank = "Retard";
       }
-    $('#rank').html(your_rank)
+    $('#rank').html(your_rank);
     $('#endgame').fadeIn(300);
   }, 400);
 }
@@ -70,7 +70,7 @@ function startTimer() {
     if (current_time >= 3600) {clearInterval(timer);
       $('#timer').html('Are you <a href="http://instagram.com/isaaclinsane">Isaac Huang</a>? <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>');
     }
-    if (testing_array.length == 0) {clearInterval(timer);
+    if (testing_array.length === 0) {clearInterval(timer);
       setTimeout(endGame(), 1000);
     }
   }, 10);
