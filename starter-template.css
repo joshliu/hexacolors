@@ -8,6 +8,10 @@ body {
 	position: relative;
 }
 
+#seconds {
+  display: none;
+}
+
 .starter-template {
   padding: 30px 15px;
   text-align: center;

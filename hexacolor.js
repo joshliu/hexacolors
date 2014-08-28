@@ -1,12 +1,11 @@
 //define objects
-
+var finalScore = 0;
 var array_of_colors = ["Blue", "Purple", "Green", "Red", "Yellow", "Orange"];
 
 function shuffle(array) {
   var currentIndex = array.length,
   temporaryValue,
-  randomIndex
-    ;
+  randomIndex;
 
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
@@ -25,53 +24,53 @@ function shuffle(array) {
 }
 
 function endGame() {
-  $('.panel').fadeOut(300);
-  $('#hexagon').fadeOut(300);
-  $('#colors').fadeOut(300);
-  $('#timer').fadeOut(300);
+  finalScore = currentTime.toFixed(2);
+  $('.panel').fadeOut(200);
+  $('#hexagon').fadeOut(200);
+  $('#colors').fadeOut(200);
+  $('#timer').fadeOut(200);
+  $('#seconds').fadeOut(200);
   setTimeout(function(){
-    $('#hexagon').fadeIn(300);
-    $('#score').html(current_time);
+    $('#hexagon').fadeIn(200);
+    $('#score').html(finalScore);
     var your_rank = "";
-      if (current_time < 300){
+      if (currentTime < 3){
         your_rank = "Light";
       }else
-      if (current_time < 350){
+      if (currentTime < 3.5){
         your_rank = "Superhuman";
       }else
-      if (current_time < 400){
+      if (currentTime < 4){
         your_rank = "Rocket";
       }else
-      if (current_time < 500){
+      if (currentTime < 6){
         your_rank = "Average";
       }else
-      if (current_time < 600){
+      if (currentTime < 8){
         your_rank = "Snail";
       }else
-      if (current_time < 800){
+      if (currentTime < 12){
         your_rank = "Sloth";
       }else
-      if (current_time < 2000){
-        your_rank = "Slowpoke";
-      }else
-      {
-        your_rank = "Retard";
+      if (currentTime < 36){
+        your_rank = '<a href="http://instagram.com/isaaclinsane">Isaac Huang</a>';
+      }else{
+        your_rank = "You lose";
       }
     $('#rank').html(your_rank);
-    $('#endgame').fadeIn(300);
-  }, 400);
+    $('#endgame').fadeIn(200);
+  }, 300);
 }
-
 
 function startTimer() {
   var timer = setInterval(function(){
-    current_time += 1;
-    $('#timer').html(current_time);
-    if (current_time >= 3600) {clearInterval(timer);
+    currentTime += 0.01;
+    $('#timer').html(currentTime.toFixed(2));
+    if (currentTime >= 36) {clearInterval(timer);
       $('#timer').html('Are you <a href="http://instagram.com/isaaclinsane">Isaac Huang</a>? <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>');
     }
     if (testing_array.length === 0) {clearInterval(timer);
-      setTimeout(endGame(), 1000);
+      setTimeout(endGame(), 1);
     }
   }, 10);
 }
@@ -84,13 +83,13 @@ function checkButton(color) {
     $(this).css("fill", "#DDDDDD");
   }
   else {
-    current_time += 100;
+    currentTime += 1;
   }
 }
 
 var testing_array = shuffle(array_of_colors);
 var testing_string = testing_array.toString();
-var current_time = 0;
+var currentTime = 0;
 
 //on click: do this
 
@@ -98,9 +97,9 @@ $(document).ready(function() {
     $('#start').click(function() {
         $('#colors').html(testing_string);
         $('#start').fadeOut(100);
-        $('#title').fadeOut('slow');
-        $('#hidethis').fadeOut('slow');
-        $('#description').fadeOut('slow');
+        $('#title').fadeOut(200);
+        $('#hidethis').fadeOut(200);
+        $('#description').fadeOut(200);
         $('#footer').fadeOut(500);
         startTimer();
     setTimeout(function() {
@@ -110,11 +109,12 @@ $(document).ready(function() {
         // $('#orange').fadeIn(500);
         // $('#yellow').fadeIn(600);
         // $('#green').fadeIn(700);
-        $('.panel').fadeIn(300);
-        $('#hexagon').fadeIn(300);
-        $('#colors').fadeIn(300);
-        $('#timer').fadeIn(300);
-    }, 600);
+        $('.panel').fadeIn(200);
+        $('#hexagon').fadeIn(200);
+        $('#colors').fadeIn(200);
+        $('#timer').fadeIn(200);
+        $('#seconds').fadeIn(200);
+    }, 200);
     });
 });
 

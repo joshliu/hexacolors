@@ -8,8 +8,8 @@
     <meta name="author" content="">
 
     <title>Hexacolors</title>
-    <link rel="icon" 
-      type="image/png" 
+    <link rel="icon"
+      type="image/png"
       href="graphics/hexagon.png">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,26 +38,26 @@
         <p class="btn btn-lg btn-default" id="start">Play Game</p>
       </div>
       <div class="game">
-        <h1 id="timer">0.00 Seconds</h1>
+        <h1 id="seconds"><span id="timer"></span> seconds</h1>
         <center><div class="well" id="colors">
         <strong><p class="lead" id="colors"></p></strong>
         </div></center>
         <div id="hexagon"><svg xmlns="http://www.w3.org/1250/svg" width="300" height="250">
-  <polygon fill="#0074D9" id="blue" 
+  <polygon fill="#0074D9" id="blue"
             points="
-            150,0 
-            150,125 
+            150,0
+            150,125
             258,62.5" />
   <polygon fill="#B10DC9" id="purple"
             points="
             150,125
-            258,62.5 
+            258,62.5
             258,187.5" />
   <polygon fill="#FF4136" id="red"
             points="
             150,125
             258,187.5
-            150,250" /> 
+            150,250" />
   <polygon fill="#FFDC00" id="yellow"
             points="
             42,187.6
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div id="endgame">
-        <h1>Score: <span id="score"></span><br>Level: <span id="rank"></span> Speed!</h1>
+        <h1><span id="score"></span> seconds<br>Level: <span id="rank"></span></h1>
         <br>
         <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>
       </div>
