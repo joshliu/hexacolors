@@ -47,7 +47,7 @@ function endGame() {
         your_rank = "David";
       }else
       if (currentTime < 8){
-        your_rank = "Snail";
+        your_rank = "Average";
       }else
       if (currentTime < 12){
         your_rank = "Sloth";
