@@ -5,7 +5,7 @@ body {
 }
 
 #container {
-	position: relative;
+  width: 100%
 }
 
 #seconds {
@@ -30,10 +30,10 @@ body {
 
 #footer {
 	color: white;
-	margin-top: 50px;
-	position: absolute;
-	bottom: 2%;
-	left: 1.5%;
+  text-align: right;
+  width: 98%;
+  position:absolute;
+  bottom:1%;
 }
 
 #endgame {
@@ -78,15 +78,6 @@ body {
 	color: black;
 }
 
-.panel {
-	width: 200px;
-	display: none;
-}
-
-.panel-primary {
-	width: 200px;
-	display: none;
-}
 
 #title {
 	font-family: 'Raleway', sans-serif;

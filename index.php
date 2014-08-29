@@ -28,17 +28,16 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" style="width:100%;">
 
       <div class="starter-template">
         <h1 id="title"><strong>Hexacolors</strong></h1>
         <p class="lead" id="description">Test Your Reaction Time!</p>
-
-        <p class="btn btn-lg btn-default" id="start">Play Game</p>
+        <p class="btn btn-lg btn-default" id="start">Play Game</p><br>
 
       </div>
       <div class="game">
-        <center><div class="well" style="margin-bottom:30px;">
+        <center><div class="well" style="margin-bottom:30px; width:250px;">
         <strong>Next Color: <span class="lead" id="colors"></span></strong>
         </div></center>
         <div id="hexagon"><svg xmlns="http://www.w3.org/1250/svg" width="300" height="250">
@@ -79,6 +78,8 @@
       <center>
       <h2 id="seconds" style="font-size:28pt;font-weight:lighter;margin-top:-10px"><span id="timer"></span> seconds</h2>
       <div id="endgame">
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="You guys should play Hexacolors! www.hexacolors.com" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none">Tweet</a>
         <h2 style="font-size:28pt;font-weight:lighter;"><span id="score"></span> seconds<br>Level: <span id="rank"></span></h2>
         <br>
         <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>
