@@ -17,8 +17,6 @@
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
 
-
-
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,12 +33,13 @@
       <div class="starter-template">
         <h1 id="title"><strong>Hexacolors</strong></h1>
         <p class="lead" id="description">Test Your Reaction Time!</p>
+
         <p class="btn btn-lg btn-default" id="start">Play Game</p>
+
       </div>
       <div class="game">
-        <h1 id="seconds"><span id="timer"></span> seconds</h1>
-        <center><div class="well" id="colors">
-        <strong><p class="lead" id="colors"></p></strong>
+        <center><div class="well" style="margin-bottom:30px;">
+        <strong>Next Color: <span class="lead" id="colors"></span></strong>
         </div></center>
         <div id="hexagon"><svg xmlns="http://www.w3.org/1250/svg" width="300" height="250">
   <polygon fill="#0074D9" id="blue"
@@ -78,16 +77,9 @@
       </div>
       <br>
       <center>
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">Just Clicked:</h3>
-        </div>
-        <div class="panel-body">
-          <strong><span id="buttonpressed">Nothin' Yet</span></strong>
-        </div>
-      </div>
+      <h2 id="seconds" style="font-size:28pt;font-weight:lighter;margin-top:-10px"><span id="timer"></span> seconds</h2>
       <div id="endgame">
-        <h1><span id="score"></span> seconds<br>Level: <span id="rank"></span></h1>
+        <h2 style="font-size:28pt;font-weight:lighter;"><span id="score"></span> seconds<br>Level: <span id="rank"></span></h2>
         <br>
         <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>
       </div>

@@ -13,16 +13,14 @@ body {
 }
 
 .starter-template {
-  padding: 30px 15px;
   text-align: center;
 }
 
 #hexagon {
 	display: none;
-	margin: 30px;
 }
 
-#colors {
+.well {
 	display: none;
 }
 
@@ -44,10 +42,6 @@ body {
 
 .game {
 	text-align: center;
-}
-
-#blue #green #red #yellow #purple #orange {
-	display: none;
 }
 
 #blue:active {

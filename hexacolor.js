@@ -27,7 +27,7 @@ function endGame() {
   finalScore = currentTime.toFixed(2);
   $('.panel').fadeOut(200);
   $('#hexagon').fadeOut(200);
-  $('#colors').fadeOut(200);
+  $('.well').fadeOut(200);
   $('#timer').fadeOut(200);
   $('#seconds').fadeOut(200);
   setTimeout(function(){
@@ -67,7 +67,7 @@ function startTimer() {
     currentTime += 0.01;
     $('#timer').html(currentTime.toFixed(2));
     if (currentTime >= 36) {clearInterval(timer);
-      $('#timer').html('Are you <a href="http://instagram.com/isaaclinsane">Isaac Huang</a>? <a href="javascript:history.go(0)" class="btn btn-lg btn-default">Play Again?</a>');
+      endGame();
     }
     if (testing_array.length === 0) {clearInterval(timer);
       setTimeout(endGame(), 1);
@@ -77,10 +77,10 @@ function startTimer() {
 
 function checkButton(color) {
   buttonpressed = color;
-  $('#buttonpressed').html(buttonpressed);
   if (buttonpressed === testing_array[0]) {
     testing_array.shift();
-    $(this).css("fill", "#DDDDDD");
+    var nextColor = testing_array[0];
+    $('#colors').html(nextColor);
   }
   else {
     currentTime += 1;
@@ -88,7 +88,7 @@ function checkButton(color) {
 }
 
 var testing_array = shuffle(array_of_colors);
-var testing_string = testing_array.toString();
+var testing_string = testing_array[0];
 var currentTime = 0;
 
 //on click: do this
@@ -111,7 +111,7 @@ $(document).ready(function() {
         // $('#green').fadeIn(700);
         $('.panel').fadeIn(200);
         $('#hexagon').fadeIn(200);
-        $('#colors').fadeIn(200);
+        $('.well').fadeIn(200);
         $('#timer').fadeIn(200);
         $('#seconds').fadeIn(200);
     }, 200);
