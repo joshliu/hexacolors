@@ -1,3 +1,8 @@
+html {
+  -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
 body {
   padding-top: 50px;
   background: #001F3F;
