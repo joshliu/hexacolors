@@ -44,16 +44,16 @@ function endGame() {
         your_rank = "Rocket";
       }else
       if (currentTime < 6){
-        your_rank = "David";
+        your_rank = "Average";
       }else
       if (currentTime < 8){
-        your_rank = "Average";
+        your_rank = "Slower";
       }else
       if (currentTime < 12){
         your_rank = "Sloth";
       }else
       if (currentTime < 36){
-        your_rank = '<a href="http://instagram.com/isaaclinsane">Isaac Huang</a>';
+        your_rank = 'Slowpoke';
       }else{
         your_rank = "You lose";
       }
